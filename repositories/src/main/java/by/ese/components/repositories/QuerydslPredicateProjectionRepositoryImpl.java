@@ -1,6 +1,5 @@
 package by.ese.components.repositories;
 
-import com.mysema.commons.lang.Assert;
 import com.querydsl.core.QueryResults;
 import com.querydsl.core.types.*;
 import com.querydsl.core.types.dsl.PathBuilder;
@@ -14,6 +13,7 @@ import org.springframework.data.jpa.repository.support.JpaEntityInformation;
 import org.springframework.data.jpa.repository.support.Querydsl;
 import org.springframework.data.jpa.repository.support.QuerydslJpaPredicateExecutor;
 import org.springframework.data.querydsl.EntityPathResolver;
+import org.springframework.util.Assert;
 
 import javax.persistence.EntityManager;
 import java.util.List;

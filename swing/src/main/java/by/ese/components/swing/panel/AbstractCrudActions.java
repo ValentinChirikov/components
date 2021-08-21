@@ -12,13 +12,13 @@ import javax.swing.ImageIcon;
  */
 public abstract class AbstractCrudActions implements CrudActions {
 
-    private final String CREATE_SMALL_ICON = "/by/ese/components/swing/panel/ic_add_black_16.png";
-    private final String EDIT_SMALL_ICON = "/by/ese/components/swing/panel/ic_edit_black_16.png";
-    private final String DELETE_SMALL_ICON = "/by/ese/components/swing/panel/ic_remove_black_16.png";
-    private final String REFRESH_SMALL_ICON = "/by/ese/components/swing/panel/ic_refresh_black_16.png";
-    private final String UNDO_SMALL_ICON = "/by/ese/components/swing/panel/ic_undo_black_16.png";
-    private final String REDO_SMALL_ICON = "/by/ese/components/swing/panel/ic_redo_black_16.png";
-    private final String COMMIT_SMALL_ICON = "/by/ese/components/swing/panel/ic_done_black_16.png";
+    private static final String CREATE_SMALL_ICON = "/by/ese/components/swing/panel/ic_add_black_16.png";
+    private static final String EDIT_SMALL_ICON = "/by/ese/components/swing/panel/ic_edit_black_16.png";
+    private static final String DELETE_SMALL_ICON = "/by/ese/components/swing/panel/ic_remove_black_16.png";
+    private static final String REFRESH_SMALL_ICON = "/by/ese/components/swing/panel/ic_refresh_black_16.png";
+    private static final String UNDO_SMALL_ICON = "/by/ese/components/swing/panel/ic_undo_black_16.png";
+    private static final String REDO_SMALL_ICON = "/by/ese/components/swing/panel/ic_redo_black_16.png";
+    private static final String COMMIT_SMALL_ICON = "/by/ese/components/swing/panel/ic_done_black_16.png";
 
     /**
      * Create Action
