@@ -31,8 +31,9 @@
 
     <distributionManagement>
         <repository>
-            <id>eseby</id>
-            <url>${repositoryUrl}</url>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/valentinchirikov/components</url>
         </repository>
     </distributionManagement>
 
@@ -42,7 +43,6 @@
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>4.12</version>
-                <!--                <scope>test</scope>-->
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -67,28 +67,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>2.8.2</version>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.5.1</version>
-                <executions>
-                    <execution>
-                        <id>default-deploy</id>
-                        <phase>deploy</phase>
-                        <goals>
-                            <goal>deploy</goal>
-                        </goals>
-                        <configuration>
-                            <serverId>eseby</serverId>
-                            <nexusUrl>${repositoryUrl}</nexusUrl>
-                            <skipStaging>true</skipStaging>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>

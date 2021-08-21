@@ -12,8 +12,6 @@ import javax.swing.text.JTextComponent;
  * inside the JTextComponent. Using this interface the mechanism for automatic
  * completion is independent from the underlying data and selection model.
  *
- * @see ComboBoxAdaptor
- * @see ListAdaptor
  */
 public interface AutoCompleteAdaptor {
     /**
